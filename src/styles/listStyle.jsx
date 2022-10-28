@@ -2,12 +2,8 @@ import styled from 'styled-components';
 
 const ListArea = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 3rem;
-  grid-column-gap: 3rem ;
-  margin-bottom: 80px;
-  justify-content: center;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 7rem;
 
   .character_conatiner {
     display: flex;

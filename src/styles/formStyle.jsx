@@ -5,7 +5,7 @@ const FormArea = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 8rem;
   font-weight: 700;
   input, select {
@@ -28,6 +28,13 @@ const FormArea = styled.div`
     border-radius: 0.25rem ;
     font-weight: 800;
     cursor: pointer;
+  }
+
+  @media screen and (max-width:600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding: 0 50px;
   }
 `;
 
